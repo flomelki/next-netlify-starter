@@ -10,14 +10,14 @@ body {
   box-sizing: border-box;
 }
 
-main {
+/* main {
   padding: 5rem 0;
   flex: 1;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
+} */
 
 code {
   background: #fafafa;
@@ -26,10 +26,93 @@ code {
   font-family: Menlo, Monaco, Lucida Console, Courier New, monospace;
 }
 
-.container {
+.content {
   height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding : 20%;
+  line-height: 1.2em;
+}
+
+/* @media (min-width: 768px)
+{
+  .info-container {
+      box-shadow: 0 0 0.5rem #9da5ab;
+      display: block;
+      -webkit-box-flex: 3;
+      -webkit-flex: 3 3 0;
+      -ms-flex: 3 3 0px;
+      flex: 3 3 0;
+      height: auto;
+      position: relative;
+  }
+} */
+
+.header
+{
+  display: block;
+  position: relative;
+  top: 0;
+}
+
+.info-container {
+    /* display: inline-block;
+    background-color: #fff;
+    -webkit-box-flex: 0;
+    -webkit-flex: none;
+    -ms-flex: none;
+    flex: none;
+    height: 100vh;
+    max-width: 310px;
+    min-width: 20%;
+    overflow-y: auto;
+    padding: 2.4rem; */
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 300px;
+    height: 100%;
+    background-color: rgb(243, 243, 243);
+    border-right: 1px solid #bbb;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    white-space: nowrap;
+    will-change: scroll-position;
+    z-index: 1;
+    -webkit-overflow-scrolling: touch; */
+}
+
+.content-container {
+  margin-left: 300px;
+  /* padding: 10px; */
+  /* display: inline-block;
+  -webkit-box-flex: 14;
+  -webkit-flex: 14 14 0;
+  -ms-flex: 14 14 0px;
+  flex: 14 14 0;
+  overflow-x: hidden;
+  overflow-y: auto;
+  padding: 2.4rem 4rem;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  will-change: scroll-position;
+  -webkit-overflow-scrolling: touch;
+  min-width: 80%; */
+}
+
+.image
+{
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.image1
+{
+  background-image: url("../public/bg.jpeg");
 }
